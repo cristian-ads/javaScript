@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>operadores logicos</title>
+</head>
+<body>
+
+
+
+
+
+	<div style="align-content: center;" >
+			<h1>Eventos</h1>
+			<input id="campo1" type="text" name="id" >
+
+
+			<input type="button" name="" value="mostra alerta" onclick="mostra_alerta()">
+
+			<input onclick="limpar_campo()" id="limpa" type="button" name="" value="Limpar campo">
+		
+	</div>
+
+	
+
+
+	<script type="text/javascript">
+		var elemento = document.getElementById('campo1');
+		
+
+
+		function mostra_alerta() {
+			elemento.value == ''?
+			alert('digite algo'):alert(elemento.value);
+		}
+
+		function limpar_campo() {
+			elemento.value='';
+
+		}
+
+
+
+		console.log(elemento.value);
+	</script>
+
+
+</body>
+</html>
